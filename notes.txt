@@ -1,0 +1,6 @@
+CSS selectors:
+
+
+.container {}
+    .row {}
+        .col-1 {}
