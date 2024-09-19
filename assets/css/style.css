@@ -1,15 +1,5 @@
+@import url(./root.css);
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inconsolata:wght@200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Yellowtail&display=swap');
-
-* {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-    text-decoration: none;
-    box-sizing: border-box;
-    /*outline: 1px solid red;*/
-
-}
-
 
 .container {
     max-width: 1320px;
@@ -27,6 +17,42 @@
     margin-left: -12px;
     margin-right: -12px;
 }
+
+/*1st page*/
+
+@import url(./root.css);
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+
+
+
+.bg-black {
+    background-color: black;
+}
+
+.mw-1207 {
+    max-width: 1207px;
+}
+
+
+.text-white {
+    color: white;
+}
+
+
+
+.fw-400 {
+    font-weight: 400px;
+}
+
+.lh-90px {
+    line-height: 90px;
+}
+
+.ff-acme {
+    font-family: "Acme", sans-serif;
+}
+
 
 /*flex box layout*/
 .text-center {
@@ -470,7 +496,7 @@ td {
     height: 50px;
     border-radius: 32px;
     border: 2px solid rgba(235, 234, 237, 1);
-cursor: pointer;
+    cursor: pointer;
 }
 
 .dark-btn {
@@ -528,7 +554,8 @@ cursor: pointer;
     text-align: center;
     color: rgba(30, 14, 98, 1);
 }
-.text-left{
+
+.text-left {
     text-align: left;
 }
 
@@ -599,7 +626,7 @@ cursor: pointer;
     text-align: left;
     color: rgba(30, 14, 98, 1);
     margin-top: 20px;
-   
+
 }
 
 .form-text {
@@ -630,9 +657,9 @@ cursor: pointer;
 
 }
 
-.social-icon{
+.social-icon {
     line-height: 90px;
-padding-left: 20px;
+    padding-left: 20px;
 }
 
 .text-left {
@@ -883,10 +910,12 @@ h5 {
 iframe {
     margin-left: 30px;
 }
-.form{
+
+.form {
     padding: 40px;
     margin-top: 30px;
 }
+
 .project {
     font-family: "DM Sans", sans-serif;
     font-size: 16px;
@@ -915,7 +944,7 @@ iframe {
     padding-left: 20px;
 }
 
-input[type="email"]{
+input[type="email"] {
     font-family: "DM Sans", sans-serif;
     font-size: 18px;
     font-weight: 500;
@@ -942,7 +971,7 @@ input[type="email"]{
     margin-bottom: 24px;
 }
 
-input[type ="name"]{
+input[type="name"] {
     font-family: "DM Sans", sans-serif;
     font-size: 18px;
     font-weight: 500;
@@ -983,6 +1012,7 @@ input[type ="name"]{
         padding-left: 12px;
         padding-right: 12px;
     }
+
     .col-sm-6 {
         width: 50%;
         padding-left: 12px;
