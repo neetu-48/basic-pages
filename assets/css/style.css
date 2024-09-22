@@ -1,5 +1,6 @@
 @import url(./root.css);
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inconsolata:wght@200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 
 .container {
     max-width: 1320px;
@@ -65,7 +66,7 @@
 
 .btn-1 {
     border-radius: 3rem;
-    background-color: blue;
+    background: rgba(44, 73, 254, 1);
     color: #fff;
     display: inline-block;
     cursor: pointer;
@@ -81,7 +82,16 @@
 .ml-15 {
     margin-left: 15px;
 }
-
+.card-1{  
+    background-color: #fff;
+    border-radius: 1rem;
+    border: none;
+    padding: 25px 30px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 8px 35px 0px rgba(0, 0, 0, 0.1);
+    border-color: transparent;
+}
 .card {
     background-color: #fff;
     border-radius: 1rem;
@@ -206,22 +216,27 @@
     overflow: hidden;
 }
 
-h4 {
+.change {
     font-family: "Work Sans", sans-serif;
     font-size: 20px;
     font-weight: 500;
-    line-height: 50px;
+    line-height: 24.72px;
     text-align: center;
+    padding-top: 20px;
+    color: rgba(0, 0, 0, 1);
+
 }
+
 
 .modify2 {
     font-family: "Work Sans", sans-serif;
     font-size: 16px;
     font-weight: 400;
-    line-height: 50px;
+    line-height: 24.1px;
     text-align: center;
     color: rgba(123, 123, 123, 1);
-
+    padding-top: 12px;
+    padding-bottom: 15px;
 }
 
 .iconboxcontainer {
@@ -270,33 +285,44 @@ h4 {
     margin-bottom: 10px;
     font-family: "DM Sans", sans-serif;
     font-size: 42px;
+    line-height: 52px;
+    text-align: center;
     font-weight: 700;
-
+    letter-spacing: -0.4000000059604645px;
     color: rgba(30, 14, 98, 1);
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
 }
+
 
 .content1 {
     font-family: "DM Sans", sans-serif;
     font-size: 18px;
     font-weight: 500;
     line-height: 28px;
-    color: gray;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    color: rgba(21, 20, 57, 0.4);
+    text-align: center;
     margin-bottom: 30px;
 }
+
+
 
 
 .box {
     border-radius: 10px;
     margin-bottom: 20px;
-    background-color: lightgrey;
+    background-color: rgba(235, 234, 237, 1);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: auto;
 
+}
+
+.card-logo {
+    margin-bottom: 30px;
+    padding: auto;
 }
 
 .py-20 {
@@ -325,6 +351,7 @@ h4 {
 .text1 {
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
+    line-height: 24px;
     font-weight: 700;
     margin-bottom: 10px;
     letter-spacing: 0.10000000149011612px;
@@ -350,24 +377,33 @@ h4 {
     padding: 25px;
 }
 
-h2 {
+.heading-1 {
     font-family: "Montserrat", sans-serif;
     text-align: left;
     color: rgba(37, 43, 66, 1);
     left: 30px;
     padding: 20px 0px 20px 0px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0.20000000298023224px;
 }
 
 
 .text-2 {
-    font-family: "DM Sans", sans-serif;
-    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
     font-weight: 400;
-    line-height: 26px;
+    line-height: 20px;
+    letter-spacing: 0.20000000298023224px;
     color: rgba(21, 20, 57, 0.4);
-    text-align: justify;
-    margin-top: 15px;
+    text-align: left;
+    margin-top: 10px;
+    color: rgba(115, 115, 115, 1);
+
 }
+
+
 
 .boxicon {
     width: 70px;
@@ -385,14 +421,21 @@ h2 {
     margin-top: 20px;
 }
 
+.svg-1 {
+    margin-top: 35px;
+}
+
 
 .indent {
-    font-family: "DM Sans", sans-serif;
-    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
     font-weight: 700;
-    line-height: 50px;
+    text-align: left;
+    line-height: 24px;
     color: rgba(252, 114, 77, 1);
     margin-right: 10px;
+    letter-spacing: 0.20000000298023224px;
+    margin-top: 30px;
 }
 
 /*content-34*/
@@ -416,18 +459,11 @@ h2 {
     border-radius: 10px;
     color: rgba(30, 14, 98, 1);
     background: rgba(235, 234, 237, 1);
-    white-space: nowrap;
-    overflow: auto;
     padding-left: 30px;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
-/*
-.over-flow-auto {
-    overflow: auto;
-}
-*/
 .heading1 {
     font-family: "DM Sans", sans-serif;
     font-size: 30px;
@@ -438,11 +474,18 @@ h2 {
 }
 
 
+
+
 .svg {
     font-family: "DM Sans", sans-serif;
     text-indent: 10px;
     color: rgba(30, 14, 98, 1);
     margin-top: 50px;
+    line-height: 26px;
+    letter-spacing: 2px;
+    text-align: left;
+
+
 }
 
 .copybtn {
@@ -465,6 +508,10 @@ h2 {
     border-collapse: collapse;
     border: 2px solid rgba(235, 234, 237, 1);
     width: 100%;
+}
+
+.bg-change {
+    background: rgba(235, 234, 237, 1);
 }
 
 .responsive-table {
@@ -494,6 +541,12 @@ td {
     border-radius: 32px;
     border: 2px solid rgba(235, 234, 237, 1);
     cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    text-align: center;
+    color: rgba(30, 14, 98, 1);
+
 }
 
 .dark-btn {
@@ -515,6 +568,10 @@ td {
 
 }
 
+.max-w-1170 {
+    max-width: 1170px;
+}
+
 .modify {
     font-family: "DM Sans", sans-serif;
     font-size: 14px;
@@ -522,6 +579,14 @@ td {
     letter-spacing: 2px;
     text-align: right;
     color: rgba(21, 20, 57, 0.4);
+}
+
+.text-1 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: rgba(30, 14, 98, 1);
 
 }
 
@@ -532,7 +597,7 @@ td {
     letter-spacing: -0.4000000059604645px;
     text-align: center;
     color: rgba(30, 14, 98, 1);
-    padding-right: 52px;
+    padding-bottom: 10px;
 }
 
 .modify1 {
@@ -541,12 +606,13 @@ td {
     line-height: 70px;
     letter-spacing: -1px;
     text-align: center;
+    color: rgba(30, 14, 98, 1);
 
 }
 
 .paragraph {
     font-family: "DM Sans", sans-serif;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 26px;
     text-align: center;
     color: rgba(30, 14, 98, 1);
@@ -569,7 +635,10 @@ td {
     right: 50%;
     transform: translateY(-50%);
     padding-right: 40px;
-    padding-top: 60px;
+    padding-top: 20px;
+    line-height: 26px;
+    color: rgba(30, 14, 98, 1);
+
 
 }
 
@@ -594,7 +663,8 @@ td {
     font-size: 16px;
     text-align: left;
     color: rgba(21, 20, 57, 0.4);
-
+    line-height: 26px;
+    margin-top: 20px;
 }
 
 .article-1 {
@@ -606,23 +676,22 @@ td {
     padding-bottom: 20px;
 }
 
-.menu-card {
-    font-family: "DM Sans", sans-serif;
-    font-size: 16px;
-    line-height: 30px;
-    /* text-align: center; */
-    color: rgba(30, 14, 98, 1);
-    margin-top: 20px;
-}
-
-
 .article-3 {
     font-family: "DM Sans", sans-serif;
     font-size: 18px;
     line-height: 28px;
     text-align: left;
     color: rgba(30, 14, 98, 1);
-    margin-top: 20px;
+
+}
+
+.ul-list {
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: left;
+    color: rgba(30, 14, 98, 1);
 
 }
 
@@ -677,9 +746,6 @@ td {
 
 /*content_32*/
 
-.responsive-payout {
-    overflow: auto;
-}
 
 .payout {
     border-collapse: collapse;
@@ -694,6 +760,10 @@ td {
     letter-spacing: -0.4000000059604645px;
     color: rgba(30, 14, 98, 1);
 
+}
+
+.max-w-270 {
+    max-width: 270px;
 }
 
 .card-tip {
@@ -731,15 +801,23 @@ h5 {
     font-size: 14px;
     color: rgba(21, 20, 57, 0.4);
     border: none;
+    line-height: 26px;
+    letter-spacing: 2px;
+    text-align: center;
 
 }
 
 
 .change-header {
     border-left: none;
-    border-right: none;
     border-bottom: none;
+    border-right: none;
     font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: rgba(30, 14, 98, 1);
+
 }
 
 .sample {
@@ -758,9 +836,6 @@ h5 {
     width: 100%;
 }
 
-.responsive-inside {
-    overflow: auto;
-}
 
 .table-modify {
     border-top: 2px solid rgba(235, 234, 237, 1);
@@ -769,6 +844,8 @@ h5 {
     font-family: "DM Sans", sans-serif;
     font-size: 16px;
     font-weight: 400;
+    line-height: 26px;
+    text-align: left;
 
 }
 
@@ -776,10 +853,16 @@ h5 {
     font-family: "DM Sans", sans-serif;
     font-size: 16px;
     font-weight: 400;
+    line-height: 26px;
     color: rgba(21, 20, 57, 0.4);
     border-right: none;
     border-left: none;
     text-align: left;
+}
+
+.change-text:nth-child(even) {
+    background: rgba(235, 234, 237, 1);
+
 }
 
 .table-change {
@@ -787,6 +870,10 @@ h5 {
     font-family: "DM Sans", sans-serif;
     font-size: 14px;
     color: rgba(21, 20, 57, 0.4);
+    line-height: 26px;
+    letter-spacing: 2px;
+    text-align: left;
+
 
 }
 
@@ -795,22 +882,14 @@ h5 {
     font-size: 42px;
     text-align: center;
     color: rgba(30, 14, 98, 1);
+    line-height: 52px;
+    letter-spacing: -0.4000000059604645px;
 
 }
 
 
 /*Get in touch*/
 
-.card-touch {
-    width: 368.5px;
-    height: 308.5px;
-}
-
-
-.card-touch1 {
-    width: 368.5px;
-
-}
 
 .form-2 {
     width: 471px;
@@ -839,61 +918,56 @@ h5 {
     font-size: 16px;
     line-height: 26px;
     color: rgba(21, 20, 57, 0.4);
-    margin-top: 20px;
-    margin-left: 30px;
+    text-align: left;
+    padding-top: 25px;
+    padding-bottom: 36px;
 }
 
 .header-1 {
     font-family: "DM Sans", sans-serif;
     font-size: 22px;
     color: rgba(30, 14, 98, 1);
+    line-height: 32px;
+    text-align: left;
+    margin-top: 20px;
+
 }
 
 .header-2 {
-    font-family: "DM Sans", sans-serif;
-    font-size: 49px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 42px;
+    line-height: 52px;
+    text-align: left;
+    padding-bottom: 25px;
     color: rgba(30, 14, 98, 1);
-    margin-left: 30px;
+
 }
 
-.header-3 {
-    font-family: "DM Sans", sans-serif;
-    font-size: 49px;
-    color: rgba(30, 14, 98, 1);
-}
-
-.call {
-    margin-top: 20px;
-    margin-left: 20px;
-}
 
 .number {
     font-family: "DM Sans", sans-serif;
     font-size: 18px;
     font-weight: 500;
     color: rgba(30, 14, 98, 1);
-    line-height: 50px;
-    margin-top: 20px;
+    line-height: 28px;
+    text-align: left;
+    padding-bottom: 15px;
 }
 
-.email-1 {
-    font-family: "DM Sans", sans-serif;
-    font-size: 18px;
-    font-weight: 500;
-    color: rgba(30, 14, 98, 1);
-    margin-top: 10px;
-
+.border-bottom {
+    border-bottom: 2px solid rgba(235, 234, 237, 1);
 }
 
 .email-icon {
-    margin-top: 10px;
-    margin-left: 20px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: left;
+    padding-bottom: 51px;
+
 }
 
-.line-1 {
-    margin-top: 20px;
-    margin-left: 30px;
-}
 
 .paragraph-1 {
     font-family: "DM Sans", sans-serif;
@@ -901,26 +975,32 @@ h5 {
     color: rgba(21, 20, 57, 0.4);
     margin-top: 20px;
     margin-bottom: 20px;
-    padding-left: 30px;
+    line-height: 26px;
 }
 
-iframe {
-    margin-left: 30px;
+.background {
+    background: rgba(235, 234, 237, 0.89);
 }
 
-.form {
-    padding: 40px;
-    margin-top: 30px;
-}
 
 .project {
     font-family: "DM Sans", sans-serif;
     font-size: 16px;
     color: rgba(21, 20, 57, 0.4);
-    padding-top: 20px;
+    padding-top: 25px;
+    padding-bottom: 36px;
 }
 
-.text-change-1 {
+label[for="E-Mail"] {
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 2px;
+    color: rgba(30, 14, 98, 1);
+    margin-top: 30px;
+}
+
+label[for="MESSAGE"] {
     font-family: "DM Sans", sans-serif;
     font-size: 14px;
     line-height: 26px;
@@ -930,15 +1010,14 @@ iframe {
 
 }
 
-.name {
-    border: 2px solid rgba(235, 234, 237, 1);
-    border-radius: 50px 40px 50px 40px;
-    color: rgba(21, 20, 57, 0.4);
+label[for="NAME"] {
     font-family: "DM Sans", sans-serif;
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 14px;
     line-height: 26px;
-    padding-left: 20px;
+    letter-spacing: 2px;
+    color: rgba(30, 14, 98, 1);
+    margin-top: 30px;
+
 }
 
 input[type="email"] {
@@ -948,24 +1027,29 @@ input[type="email"] {
     padding: 10px;
     border: 2px solid rgba(235, 234, 237, 1);
     border-radius: 2rem;
-    height: 50px;
-    width: 370px;
+    margin-top: 10px;
+    width: 100%;
     margin-bottom: 24px;
 }
 
-.drop-us {
-    background: rgba(255, 255, 255, 1);
+textarea[name="drop-us"] {
     border: 2px solid rgba(235, 234, 237, 1);
+    border-radius: 10px;
     font-family: "DM Sans", sans-serif;
     font-size: 18px;
+    line-height: 26px;
     font-weight: 500;
-    padding-bottom: 110px;
-    padding-left: 10px;
+    padding: 12px 20px;
     text-align: left;
+    margin-top: 10px;
     color: rgba(21, 20, 57, 0.4);
-    height: 170px;
-    width: 370px;
-    margin-bottom: 24px;
+    min-height: 170px;
+    width: 100%;
+    margin-bottom: 35px;
+}
+
+textarea {
+    resize: none;
 }
 
 input[type="name"] {
@@ -974,21 +1058,29 @@ input[type="name"] {
     font-weight: 500;
     color: rgba(30, 14, 98, 1);
     letter-spacing: 1px;
-    height: 50px;
-    width: 270px;
+    width: 100%;
+    margin-top: 10px;
     border: 2px solid rgba(235, 234, 237, 1);
     border-radius: 2rem;
     padding-left: 10px;
+}
+
+.p-50 {
+    padding: 50px;
 }
 
 .label-3 {
     font-family: "DM Sans", sans-serif;
     font-size: 18px;
     font-weight: 500;
+    cursor: pointer;
     line-height: 26px;
     text-align: center;
+    margin-left: 10px;
+    margin-top: 10px;
     color: rgba(255, 255, 255, 1);
     background: rgba(37, 218, 197, 1);
+    border: 2px solid rgba(37, 218, 197, 1);
     border-radius: 40px 40px 40px 40px;
 
 }
@@ -1059,6 +1151,12 @@ input[type="name"] {
 
     .col-lg-4 {
         width: 33.33%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .col-lg-5 {
+        width: 41.66%;
         padding-left: 12px;
         padding-right: 12px;
     }
